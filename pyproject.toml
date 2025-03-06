@@ -4,9 +4,20 @@ version = "0.1.0"
 description = ""
 authors = ["h-tomo-tohoku <hara.tomomasa.s8@dc.tohoku.ac.jp>"]
 readme = "README.md"
+packages = [
+    { include = "src" },
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.10,<4.0"
+acl-anthology-py = "^0.5.1"
+umap-learn = "^0.5.7"
+transformers = "^4.49.0"
+torch = "^2.6.0"
+pandas = "^2.2.3"
+streamlit = "^1.43.0"
+plotly = "^6.0.0"
+openai = "^1.65.4"
 
 
 [build-system]
